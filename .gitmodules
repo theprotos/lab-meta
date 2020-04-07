@@ -1,18 +1,28 @@
 [submodule "lab-jenkins"]
 	path = lab-jenkins
 	url = https://github.com/theprotos/lab-jenkins.git
+	branch = development
 [submodule "lab-cassandra"]
 	path = lab-cassandra
 	url = https://github.com/theprotos/lab-cassandra.git
+	branch = development
 [submodule "lab-elk"]
 	path = lab-elk
 	url = https://github.com/theprotos/lab-elk.git
+	branch = development
 [submodule "lab-node"]
 	path = lab-node
 	url = https://github.com/theprotos/lab-node.git
+	branch = development
 [submodule "lab-react"]
 	path = lab-react
 	url = https://github.com/theprotos/lab-react.git
+	branch = development
 [submodule "lab-packer"]
 	path = lab-packer
 	url = https://github.com/theprotos/lab-packer.git
+	branch = development
+[submodule "lab-k8s"]
+	path = lab-k8s
+	url = https://github.com/theprotos/lab-k8s.git
+	branch = development
