@@ -26,3 +26,6 @@
 	path = lab-k8s
 	url = https://github.com/theprotos/lab-k8s.git
 	branch = development
+[submodule "lab-springboot"]
+	path = lab-springboot
+	url = https://github.com/theprotos/lab-springboot.git

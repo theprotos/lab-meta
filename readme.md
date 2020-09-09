@@ -16,15 +16,18 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 
 - add
 ```
-git submodule add https://github.com/theprotos/lab-jenkins.git
+# Create remote repo before with one commit at least
+git submodule add https://github.com/theprotos/lab-jenkins.git 
+git submodule add https://github.com/theprotos/lab-springboot.git
+
 ```
 
 - remove
 ```
-git submodule deinit -f ci/lab-jenkins
-git rm -f ci/lab-jenkins
-git commit -m "Removed submodule "
-rm -r -force .git/modules/ci/lab-jenkins
+git submodule deinit -f lab-jenkins
+git rm -f lab-jenkins
+git commit -m "Removed submodule"
+rm -r -force .git/modules/lab-jenkins
 ```
 
 ### git subtree
