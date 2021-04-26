@@ -4,10 +4,13 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 
 - [cassandra](lab-cassandra/readme.md)
 - [ELK stack](lab-elk/readme.md)
+- [ethical](lab-ethical/readme.md)
 - [jenkins](lab-jenkins/readme.md)
+- [k8s](lab-k8s/readme.md)
 - [node](lab-node/readme.md)
-- [react](lab-react/readme.md)
 - [packer](lab-packer/readme.md)
+- [react](lab-react/readme.md)
+- [springboot](lab-springboot/readme.md)
 
 
 ## Git how to
@@ -19,7 +22,7 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 # Create remote repo before with one commit at least
 git submodule add https://github.com/theprotos/lab-jenkins.git 
 git submodule add https://github.com/theprotos/lab-springboot.git
-
+git submodule add https://github.com/theprotos/lab-ethical.git
 ```
 
 - remove

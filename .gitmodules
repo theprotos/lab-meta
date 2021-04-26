@@ -29,3 +29,6 @@
 [submodule "lab-springboot"]
 	path = lab-springboot
 	url = https://github.com/theprotos/lab-springboot.git
+[submodule "lab-ethical"]
+	path = lab-ethical
+	url = https://github.com/theprotos/lab-ethical.git
