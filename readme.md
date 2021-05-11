@@ -25,6 +25,13 @@ git submodule add https://github.com/theprotos/lab-springboot.git
 git submodule add https://github.com/theprotos/lab-ethical.git
 ```
 
+- change branch
+```
+cd <module-directory>
+git fetch
+git checkout <branch-name>
+```
+
 - remove
 ```
 git submodule deinit -f lab-jenkins
