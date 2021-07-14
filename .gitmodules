@@ -32,3 +32,6 @@
 [submodule "lab-ethical"]
 	path = lab-ethical
 	url = https://github.com/theprotos/lab-ethical.git
+[submodule "lab-maven"]
+	path = lab-maven
+	url = https://github.com/theprotos/lab-maven.git

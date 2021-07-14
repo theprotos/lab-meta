@@ -22,7 +22,7 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 # Create remote repo before with one commit at least
 git submodule add https://github.com/theprotos/lab-jenkins.git 
 git submodule add https://github.com/theprotos/lab-springboot.git
-git submodule add https://github.com/theprotos/lab-ethical.git
+git submodule add https://github.com/theprotos/lab-maven.git
 ```
 
 - change branch
