@@ -23,6 +23,9 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 git submodule add https://github.com/theprotos/lab-jenkins.git 
 git submodule add https://github.com/theprotos/lab-springboot.git
 git submodule add https://github.com/theprotos/lab-maven.git
+
+# Check file .gitmodules file
+# Check file .git/modules/<module-name>/config
 ```
 
 - change branch
@@ -34,10 +37,10 @@ git checkout <branch-name>
 
 - remove
 ```
-git submodule deinit -f lab-jenkins
-git rm -f lab-jenkins
+git submodule deinit -f lab-maven
+git rm -f lab-maven
 git commit -m "Removed submodule"
-rm -r -force .git/modules/lab-jenkins
+rm -r -force .git/modules/lab-maven
 ```
 
 ### git subtree
