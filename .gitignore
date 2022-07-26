@@ -1,2 +1,5 @@
 *.iml
 .idea
+.vagrant
+*.vdi
+lab-iac-temp

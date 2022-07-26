@@ -1,0 +1,43 @@
+[submodule "lab-jenkins"]
+	path = lab-jenkins
+	url = https://github.com/theprotos/lab-jenkins.git
+	branch = development
+[submodule "lab-cassandra"]
+	path = lab-cassandra
+	url = https://github.com/theprotos/lab-cassandra.git
+	branch = development
+[submodule "lab-elk"]
+	path = lab-elk
+	url = https://github.com/theprotos/lab-elk.git
+	branch = development
+[submodule "lab-node"]
+	path = lab-node
+	url = https://github.com/theprotos/lab-node.git
+	branch = development
+[submodule "lab-react"]
+	path = lab-react
+	url = https://github.com/theprotos/lab-react.git
+	branch = development
+[submodule "lab-packer"]
+	path = lab-packer
+	url = https://github.com/theprotos/lab-packer.git
+	branch = development
+[submodule "lab-k8s"]
+	path = lab-k8s
+	url = https://github.com/theprotos/lab-k8s.git
+	branch = development
+[submodule "lab-springboot"]
+	path = lab-springboot
+	url = https://github.com/theprotos/lab-springboot.git
+[submodule "lab-ethical"]
+	path = lab-ethical
+	url = https://github.com/theprotos/lab-ethical.git
+[submodule "lab-buildtools"]
+	path = lab-buildtools
+	url = https://github.com/theprotos/lab-buildtools.git
+[submodule "lab-cloud"]
+	path = lab-cloud
+	url = https://github.com/theprotos/lab-cloud.git
+[submodule "lab-iac"]
+	path = lab-iac
+	url = https://github.com/theprotos/lab-iac.git
