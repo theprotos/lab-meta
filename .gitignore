@@ -3,3 +3,4 @@
 .vagrant
 *.vdi
 lab-iac-temp
+venv
