@@ -15,8 +15,7 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 
 ## Git how to add modules
 
-
-### git submodule (prefer)
+### git submodule (preferred, current repo)
 
 Create remote repo before with one commit at least
 
@@ -39,6 +38,11 @@ git fetch
 git checkout <existing_branch>
 ```
 
+- Changes highlight in Intellij (idea)
+```
+[File] -> [Settings] -> [Version Control] > [Directory Mapping] > [+ Add] sub-repository
+```
+
 - remove
 ```
 git submodule deinit -f lab-maven
@@ -47,7 +51,10 @@ git commit -m "Removed submodule"
 rm -r -force .git/modules/lab-maven
 ```
 
-### git subtree
+
+
+
+## [Alternative] git subtree
 
 - add
 ```
