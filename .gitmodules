@@ -46,3 +46,6 @@
 	path = lab-iac
 	url = https://github.com/theprotos/lab-iac.git
 	branch = master
+[submodule "lab-ml"]
+	path = lab-ml
+	url = https://github.com/theprotos/lab-ml.git

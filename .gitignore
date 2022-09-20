@@ -4,3 +4,5 @@
 *.vdi
 lab-iac-temp
 venv
+join_token.txt
+*.venv
