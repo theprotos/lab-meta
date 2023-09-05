@@ -12,14 +12,6 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 - [react](lab-react/readme.md)
 - [springboot](lab-springboot/readme.md)
 
-## Setup python venv
-
-```
-python -m venv lab.venv
-.\lab.venv\Scripts\Activate.ps1
-
-```
-
 
 ## Git how to add new modules
 
@@ -30,6 +22,7 @@ Create remote repo before with one commit at least
 - add
 ```
 git submodule add <url>
+# EXAMPLES:
 #git submodule add https://github.com/theprotos/lab-jenkins.git 
 #git submodule add https://github.com/theprotos/lab-springboot.git
 #git submodule add https://github.com/theprotos/lab-buildtools.git
@@ -48,8 +41,8 @@ git checkout <existing_branch>
 ```
 
 - Changes highlight in Intellij (idea)  
-  - via Settings: [File] -> [Settings] -> [Version Control] > [Directory Mapping] > [+ Add] sub-repository
-  - via file: .idea/vcs.xml
+  - [Option A] Settings: [File] -> [Settings] -> [Version Control] > [Directory Mapping] > [+ Add] sub-repository, VCS=git
+  - [Option B] modify file: .idea/vcs.xml
 
 - remove
 ```
@@ -59,22 +52,11 @@ git commit -m "Removed submodule"
 rm -r -force .git/modules/lab-maven
 ```
 
-## [Alternative] git subtree
-
-- add
-```
-git remote add -f lab-cassandra https://github.com/theprotos/lab-cassandra.git
-git merge -s ours --no-commit --allow-unrelated-histories lab-cassandra/master
-git read-tree --prefix=database/lab-cassandra/ -u lab-cassandra/master
-```
-
-- push & pull
+## Mics
+### Setup python venv
 
 ```
-git subtree pull --prefix database/lab-cassandra https://github.com/theprotos/lab-cassandra.git master --squash
-git subtree push --prefix database/lab-cassandra https://github.com/theprotos/lab-cassandra.git master
+python -m venv lab.venv
+.\lab.venv\Scripts\Activate.ps1
 
-# Push troubleshhoting
-git subtree split --prefix=database/lab-cassandra --onto=lab-cassandra/master
-git push lab-cassandra 01234567:master
 ```
