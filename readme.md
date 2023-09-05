@@ -13,38 +13,50 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 - [springboot](lab-springboot/readme.md)
 
 
-## Git how to add new modules
+## Add new modules
 
-### git submodule (preferred, current repo)
-
-Create remote repo before with one commit at least
-
-- add
+1. Update repos
+  ```
+  git submodule update --recursive --remote
+  ```
+2. Create new remote repo or use existing with one commit at least
+3. Import the repo
+  ```
+  git submodule add <url>
+  # EXAMPLES:
+  #git submodule add https://github.com/theprotos/lab-jenkins.git 
+  #git submodule add https://github.com/theprotos/lab-springboot.git
+  #git submodule add https://github.com/theprotos/lab-buildtools.git
+  #git submodule add https://github.com/theprotos/lab-cloud.git
+  
+  # Check if it appeared .gitmodules file
+  # Check file .git/modules/<module-name>/config
 ```
-git submodule add <url>
-# EXAMPLES:
-#git submodule add https://github.com/theprotos/lab-jenkins.git 
-#git submodule add https://github.com/theprotos/lab-springboot.git
-#git submodule add https://github.com/theprotos/lab-buildtools.git
-#git submodule add https://github.com/theprotos/lab-cloud.git
+4. Select branch from the repo
+  ```
+  cd <module-directory>
+  git checkout -b <branch-name> #newone
+  git fetch
+  git checkout <existing_branch>
+  ```
 
-# Check file .gitmodules file
-# Check file .git/modules/<module-name>/config
-```
+5. Changes highlight (various colours) in Intellij Idea  
+  - Option A. Settings: [File] -> [Settings] -> [Version Control] > [Directory Mapping] > [+ Add] 
+    - sub-repository folder
+    - VCS=git
+  - Option B. modify file: `.idea/vcs.xml`, change `<sub-module-name>`
+    ```
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project version="4">
+      <component name="VcsDirectoryMappings">
+        <mapping directory="" vcs="Git" />
+        <mapping directory="$PROJECT_DIR$/<sub-module-name>" vcs="Git" />
+      </component>
+    </project>
+    ```
 
-- Select branch
-```
-cd <module-directory>
-git checkout -b <branch-name> #newone
-git fetch
-git checkout <existing_branch>
-```
+## Remove modules
 
-- Changes highlight in Intellij (idea)  
-  - [Option A] Settings: [File] -> [Settings] -> [Version Control] > [Directory Mapping] > [+ Add] sub-repository, VCS=git
-  - [Option B] modify file: .idea/vcs.xml
-
-- remove
 ```
 git submodule deinit -f lab-maven
 git rm -f lab-maven
@@ -53,10 +65,10 @@ rm -r -force .git/modules/lab-maven
 ```
 
 ## Mics
-### Setup python venv
 
-```
-python -m venv lab.venv
-.\lab.venv\Scripts\Activate.ps1
-
-```
+Setup python venv
+  ```
+  python -m venv lab.venv
+  .\lab.venv\Scripts\Activate.ps1
+  
+  ```
