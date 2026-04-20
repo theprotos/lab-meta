@@ -6,3 +6,4 @@ lab-iac-temp
 venv
 join_token.txt
 *.venv
+.DS_Store
