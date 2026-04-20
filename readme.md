@@ -19,7 +19,7 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
   ```
   git submodule update --recursive --remote
   ```
-2. Create new remote repo or use existing with one commit at least
+2. Create new remote repo or use existing with one **commit at least**
 3. Import the repo
   ```
   git submodule add <url>
@@ -42,7 +42,7 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 
 5. Changes highlight (various colours) in Intellij Idea  
   - Option A. Settings: [File] -> [Settings] -> [Version Control] > [Directory Mapping] > [+ Add] 
-    - sub-repository folder
+    - sub-repository folder (lab-meta/<module-name>)
     - VCS=git
   - Option B. modify file: `.idea/vcs.xml`, change `<sub-module-name>`
     ```

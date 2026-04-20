@@ -52,3 +52,6 @@
 [submodule "lab-gitlab"]
 	path = lab-gitlab
 	url = https://github.com/theprotos/lab-gitlab.git
+[submodule "lab-azure"]
+	path = lab-gitlab
+	url = https://github.com/theprotos/lab-azure.git
