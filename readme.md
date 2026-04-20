@@ -22,12 +22,9 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
 2. Create new remote repo or use existing with one **commit at least**
 3. Import the repo
   ```
-  git submodule add <url>
+  git submodule add <url> <path_to_submodule>
   # EXAMPLES:
-  #git submodule add https://github.com/theprotos/lab-jenkins.git 
-  #git submodule add https://github.com/theprotos/lab-springboot.git
-  #git submodule add https://github.com/theprotos/lab-buildtools.git
-  #git submodule add https://github.com/theprotos/lab-cloud.git
+  #git submodule add https://github.com/theprotos/lab-jenkins.git lab-jenkins
   
   # Check if it appeared .gitmodules file
   # Check file .git/modules/<module-name>/config
@@ -54,6 +51,11 @@ Git **mono repo** concept powered by `git submodule`, includes sandboxes for:
       </component>
     </project>
     ```
+    
+git submodule init
+git submodule update --init --recursive
+
+
 
 ## Remove modules
 
